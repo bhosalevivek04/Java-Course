@@ -1,0 +1,3 @@
+//Normal interface has multiple method
+//functional interface has single abstract method
+//Marker interface has no method
