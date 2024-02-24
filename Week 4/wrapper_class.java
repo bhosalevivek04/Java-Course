@@ -1,6 +1,6 @@
 public class wrapper_class {
     public static void main(String[] args) {
-        // every primitive type we hava class of it
+        // every primitive type we have a class of it
         int num = 7;
         // Integer Num = new Integer(7); //Integer is a Wrapper Class for int,char etc.
         Integer num1 = num; // auto-boxing
