@@ -1,8 +1,6 @@
+A
+65
 Java
 A
-a
-alien
-Java
-A
-a
-alien
+true
+44.5
