@@ -1,0 +1,7 @@
+SHOW DATABASES;  //for  all databases that are available in our server
+CREATE DATABASE VIVEK;    //creating a new database named Vive
+DROP DATABASE VIVEK;      //deleting the created database
+CREATE SCHEMA JAVA;         //creating a schema within the 'VIVEK' database called 'JAVA'. This is similar to creating tablespace.
+DROP SCHEMA JAVA;          //deleting an existing schema from any of the databases.
+CREATE DATABASE IF NOT EXISTS VIVEK1; 
+DROP DATABASE IF EXISTS VIVEK1;
