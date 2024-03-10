@@ -1,3 +1,4 @@
+_________FOR DATABASE_________
 SHOW DATABASES;  //for  all databases that are available in our server
 CREATE DATABASE VIVEK;    //creating a new database named Vive
 DROP DATABASE VIVEK;      //deleting the created database
@@ -5,3 +6,55 @@ CREATE SCHEMA JAVA;         //creating a schema within the 'VIVEK' database call
 DROP SCHEMA JAVA;          //deleting an existing schema from any of the databases.
 CREATE DATABASE IF NOT EXISTS VIVEK1; 
 DROP DATABASE IF EXISTS VIVEK1;
+
+_________Create Table_________
+USE SQL_LEARN;    //using the 'SQL_LEARN'  database for creating table
+CREATE TABLE personalInfo(id INT,name VARCHAR(50),date_of_birth DATE,city VARCHAR(100));
+CREATE TABLE personalEducation(edu_id INT,courses VARCHAR(30),city_of_edu VARCHAR(50));
+
+_________Insert into Table_________
+INSERT INTO personalInfo(id,name,date_of_birth,city) VALUES(1,'Vivek','2004-02-20','Sangamner');
+
+INSERT INTO personalInfo(id,name,date_of_birth,city) VALUES(3,'Pratik','2003-09-25','Birewadi'),
+(4,'Pranav','2003-01-01','Sakur');
+
+_________Primary Key_________
+CREATE TABLE employee(
+id INT,
+emp_name VARCHAR(50),
+emp_age INT,
+emp_city VARCHAR(40),
+PRIMARY KEY(id)
+);
+
+INSERT INTO employee values (
+1,'Vivek',20,'Sangamner'
+);
+
+_________SQL Constraints_________
+create table customer(
+id int not null,
+name varchar(20),
+age int not null check(age>=18),
+gender char not null,
+phone varchar(20) not null unique,
+city varchar(30) default 'Sangamner',
+primary key(id)
+);
+
+insert into customer values(
+1,'Vivek',18,'M','9607561857','Sangamner'
+);
+
+insert into customer values(
+2,'Vivek',18,'M','9607561857','Sangamner'
+);//error bcz  phone number is same as of 1st row.
+
+insert into customer(id,name,age,gender,phone) values(
+2,'Vivek',18,'M','9607561827'
+);  //default
+
+insert into customer(id,name,age,gender,phone) values(
+3,'Vivek',15,'M','9507561827'
+);//error bcz age<18
+
