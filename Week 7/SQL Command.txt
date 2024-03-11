@@ -73,4 +73,48 @@ select * from customer where age>=18 and gender='F';
 select * from customer where age>18 or gender='F';
 select * from customer where not age<20;
 
+_________IN Operator_________
+select * from customer where age in (18,19);
+select * from customer where id in (1,2,3);
+select * from customer where id not in (1,2,3);
+
+_________Between and Not Between_________
+select * from customer where age between 18 and 20;
+select * from customer where age not between 18 and 20;
+select * from customer where name between "A" and "T";
+
+_________Order By_________
+select * from customer order by age; //by default is ascending order
+select * from customer order by name asc;
+select * from customer order by age asc;
+select * from customer order by age desc;
+select * from customer where age<20 order by age desc;
+
+_________Distinct Keyword_________
+select distinct age from customer;
+select distinct age from customer order by age desc; 
+
+_________Update Records_________
+update customer set city='Pune' where id=2;
+update customer set name='Aayush',city='Mumbai' where id=5; 
+update customer set age =25 where id in(1,3);
+update customer set city='Pune';//it is possible to change entire column values
+update customer set city='Pune' where id>=1; //for no error use where Clause
+
+_________Delete Records_________
+delete from customer where id=6;
+delete from customer; //for deleting all data from table
+
+_________Commit And Rollback_________
+update customer set city='MUMBAI' where id=5;
+rollback;
+
+update customer set city='MUMBAI' where id=1;
+commit;
+update customer set city='MUMBAI' where id=3;
+update customer set city='MUMBAI' where id=5;
+rollback;
+
+
+
 
