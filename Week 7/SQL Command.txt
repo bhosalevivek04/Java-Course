@@ -58,3 +58,19 @@ insert into customer(id,name,age,gender,phone) values(
 3,'Vivek',15,'M','9507561827'
 );//error bcz age<18
 
+_________SELECT Command_________
+select * from customer;
+select id,name,age from customer;
+select id as ID, name as Name,age as AGE from customer;
+
+_________SELECT with Where Clause_________
+select id as ID, name as Name,age as AGE from customer where id=4;
+select * from personalInfo where city='Sangamner';
+select * from customer where age>18;
+
+_________AND, OR, NOT Operators_________
+select * from customer where age>=18 and gender='F';
+select * from customer where age>18 or gender='F';
+select * from customer where not age<20;
+
+
