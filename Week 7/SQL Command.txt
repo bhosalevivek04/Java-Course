@@ -115,6 +115,30 @@ update customer set city='MUMBAI' where id=3;
 update customer set city='MUMBAI' where id=5;
 rollback;
 
+_________Inner Join_________
+select * from student inner join city on student.city=city.id;
+select s.sid,s.name,s.age,c.city_name from student s inner join city c on s.city=c.id;
+select s.sid,s.name,s.age,c.city_name from student s inner join city c on s.city=c.id where c.city_name='Mumbai';
 
+_________Left Join_________
+select * from student s left join city c on s.city=c.id;
+select s.sid,s.name,c.city_name from student s left join city c on s.city=c.id;
 
+_________Right Join_________
+select * from student s right join city c on s.city=c.id;
+select s.sid,s.name,c.city_name from student s right join city c on s.city=c.id where age>20;
 
+_________Cross Join_________
+select * from student cross join city;
+select * from student s cross join city c on s.city=c.id;
+
+_________Alter Command_________
+alter table personalinfo add email varchar(40);
+alter table personalinfo modify email int(20); 
+alter table personalinfo change email email_id varchar(50); 
+alter table personalinfo drop email_id; 
+alter table personalinfo rename personal; 
+
+_________Drop and Truncate_________
+truncate table personal;
+drop table personal;
