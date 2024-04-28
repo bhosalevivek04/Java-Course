@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;Restaurant-Management-System-master&apos;" deleteContents="true" description="Delete resource &apos;Restaurant-Management-System-master&apos;" element1="/Restaurant-Management-System-master" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1710430459657"/>
+</session>

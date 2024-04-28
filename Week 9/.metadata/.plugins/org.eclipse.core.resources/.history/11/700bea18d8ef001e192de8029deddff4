@@ -1,0 +1,5 @@
+package firstJDBCapp;
+
+public class jdbcUtil {
+
+}

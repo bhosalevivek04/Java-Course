@@ -1,0 +1,9 @@
+127.0.0.1 - - [28/Apr/2024:16:20:06 +0530] "GET / HTTP/1.1" 404 752
+0:0:0:0:0:0:0:1 - - [28/Apr/2024:16:20:06 +0530] "GET /RegistrationAppMVC/ HTTP/1.1" 200 687
+0:0:0:0:0:0:0:1 - - [28/Apr/2024:16:20:06 +0530] "GET /favicon.ico HTTP/1.1" 404 763
+0:0:0:0:0:0:0:1 - - [28/Apr/2024:16:20:43 +0530] "POST /RegistrationAppMVC/Register HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [28/Apr/2024:16:20:44 +0530] "GET /RegistrationAppMVC/failure.jsp HTTP/1.1" 200 229
+127.0.0.1 - - [28/Apr/2024:16:24:20 +0530] "GET / HTTP/1.1" 404 752
+0:0:0:0:0:0:0:1 - - [28/Apr/2024:16:24:20 +0530] "GET /RegistrationAppMVC/ HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [28/Apr/2024:16:24:48 +0530] "POST /RegistrationAppMVC/Register HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [28/Apr/2024:16:24:49 +0530] "GET /RegistrationAppMVC/success.jsp HTTP/1.1" 200 228
