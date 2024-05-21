@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- <bean id="alien1" class="com.example.Spring1.Alien" scope="prototype"> 
+		</bean> -->
+
+	<bean id="alien1" class="com.example.Spring1.Alien"
+		autowire="byType">
+
+		<property name="age" value="21" />
+		<property name="com">
+			<bean id="com1" class="com.example.Spring1.Laptop"
+				primary="true">	<!-- inner bean -->
+			</bean>
+		</property>
+		<!-- <property name="com" value="com"></property> -->
+
+		<!-- <constructor-arg type="int" value="21"/> <constructor-arg type="com.example.Spring1.Laptop" 
+			ref="lap1"/> -->
+
+
+		<!-- <constructor-arg index="0" value="21"/> <constructor-arg index="1" 
+			ref="lap1"/> -->
+
+		<!-- <constructor-arg name="age" value="21"/> -->
+		<!-- <constructor-arg name="lap" ref="lap1"/> -->
+	</bean>
+
+	<!-- <bean id="com1" class="com.example.Spring1.Laptop" primary="true"> -->
+	<!-- </bean> -->
+
+	<!-- <bean class="com.example.Spring1.Desktop" lazy-init="true"> -->
+	<!-- </bean> -->
+
+</beans>
