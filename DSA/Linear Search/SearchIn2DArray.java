@@ -9,7 +9,7 @@ public class SearchIn2DArray {
     };
     int target = 14;
     int[] ans = search(arr, target);
-    System.out.println("Found element "+target+" at index :"+Arrays.toString(ans));
+    System.out.println("Found element " + target + " at index :" + Arrays.toString(ans));
     System.out.println("Maximum value in the array: " + max(arr));
     System.out.println("Minimum value in the array: " + min(arr));
   }
