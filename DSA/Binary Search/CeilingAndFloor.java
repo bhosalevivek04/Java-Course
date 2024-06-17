@@ -1,17 +1,20 @@
 public class CeilingAndFloor {
     // In that we cover Ceiling of Number and Floor of number
     public static void main(String[] args) {
-        int[] arr = { 1, 2, 4, 6, 7, 9 };
-        int target = 5;
-        //ceiling
+        int[] arr = { 2, 4, 6, 7, 9 };
+        int target = 1;
+        //ceiling means smallest number greater than or equal to target element
         int ans = ceilingOfNumBS(arr, target);
         System.out.println(ans);
-        // floor
+        // floor means greatest number less than or equal to target element
         int ans1 = floorOfNumBS(arr, target);
         System.out.println(ans1);
     }
 
     static int ceilingOfNumBS(int[] arr, int target) {
+        if (target>arr[arr.length-1]) {
+            return -1;
+        }
         int start = 0;
         int end = arr.length - 1;
         boolean isAsc = arr[start] < arr[end];
