@@ -1,6 +1,7 @@
 package com.vivek.generics.comparing;
 
 import java.util.Arrays;
+import java.util.Comparator;
 
 public class Main {
     public static void main(String[] args) {
@@ -11,7 +12,18 @@ public class Main {
 
     Student[] list={vivek,aayush,piyush,tejas};
         System.out.println(Arrays.toString(list));
-        Arrays.sort(list);
+        Arrays.sort(list, (o1, o2) -> {
+            return (int)(o1.marks-o2.marks );
+//                return -(int)(o1.marks-o2.marks );
+        });
+//        Arrays.sort(list, new Comparator<Student>() {
+//            @Override
+//            public int compare(Student o1, Student o2) {
+//                return (int)(o1.marks-o2.marks );
+////                return -(int)(o1.marks-o2.marks );
+//            }
+//        });
+
         System.out.println(Arrays.toString(list));
 
 
