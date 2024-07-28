@@ -118,6 +118,50 @@ public class DoublyLL {
         System.out.println("START");
     }
 
+    public void insertLast1(int val){
+        Node node=new Node(val);
+        Node last=head;
+
+        node.next=null;
+        if (head==null){
+            head=node;
+            node.prev=null;
+            return;
+        }
+        while (last.next != null){
+            last = last.next;
+        }
+
+        last.next=node;
+        node.prev=last;
+    }
+
+    public Node find(int value){
+        Node node=head;
+        while (node!=null){
+            if (node.val==value){
+                return node;
+            }
+            node=node.next;
+        }
+        return null;
+    }
+    public void insert1(int after,int val){
+        Node p=find(after);
+        if (p==null){
+            System.out.println("does not exist");
+            return;
+        }
+        Node node=new Node(val);
+        node.next=p.next;
+        p.next=node;
+        node.prev=p;
+        if (node.next!=null){
+            node.next.prev=node;
+        }
+
+    }
+
     private class Node{
         int val;
         Node next;

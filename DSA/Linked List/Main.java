@@ -25,27 +25,46 @@ public class Main {
         list.display();
 */
 
+
+/*
         DoublyLL list=new DoublyLL();
         list.insertFirst(3);
         list.insertFirst(2);
         list.insertFirst(8);
         list.insertFirst(17);
 
-        list.insertLast(100);
+//        list.insertLast(100);
+        list.insertLast1(99);
 
         list.insert(5,3);
         list.display();
 
-        System.out.println();
-        System.out.println(list.deleteFirst());
-        list.display();
+//        System.out.println();
+//        System.out.println(list.deleteFirst());
+//        list.display();
+
+//        System.out.println();
+//        System.out.println(list.deleteLast());
+//        list.display();
+
+//        System.out.println();
+//        list.delete(2);
+//        list.display();
 
         System.out.println();
-        System.out.println(list.deleteLast());
+        list.insert1(2,65);
+//        list.insert1(99,65);
         list.display();
+*/
 
-        System.out.println();
-        list.delete(2);
+        CLL list=new CLL();
+        list.insert(23);
+        list.insert(3);
+        list.insert(19);
+        list.insert(75);
+
+        list.display();
+        list.delete(19);
         list.display();
     }
 }
