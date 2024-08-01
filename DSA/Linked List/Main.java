@@ -11,8 +11,9 @@ public class Main {
 
 //        list.insertLast(99);
         list.display();
-        list.insertRec(88,2);
-        list.display();
+//        list.insertRec(88,2);
+//        list.display();
+
 
 //        list.insert(100,3);
 //
