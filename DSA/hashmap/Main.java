@@ -39,6 +39,10 @@ public class Main {
         map2.put("Mango","King of fruits");
         System.out.println(map2.get("Mango"));
 
+//        KarpRabin Algorithm
+        KarpRabin algo=new KarpRabin();
+        algo.search("VivekShankarBhosale","Shankar");
+
     }
 
 }
